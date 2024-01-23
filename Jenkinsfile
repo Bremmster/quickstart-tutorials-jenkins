@@ -1,7 +1,8 @@
 pipeline {
     agent {
             docker {
-                image 'maven:3.9.6-amazoncorretto-21-al2023'
+                image "maven:3.9.6-amazoncorretto-21-al2023"
+                label "docker"
             }
     }
     stages {
