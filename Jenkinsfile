@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-            docker {
-                image "maven:3.9.6-amazoncorretto-21-al2023"
-                label "docker"
-//                 args "-v /tmp/maven:/var/maven/.m2 - e MAVEN_CONFIG=/var/maven/.m2"
-            }
+    agent any
     }
     stages {
         stage('Build') {
